@@ -1,0 +1,196 @@
+img:hover  {
+transform: scale(1.05);
+}
+    
+img {
+transition: transform .25s ease;
+}
+
+.divvisa {
+    display: inline-block;
+    padding:50px;
+    margin: 0 auto;
+}
+
+.row-fluid {
+    margin: 0 auto;
+}
+
+/*.parallax-window {
+    height: 400px;
+    width: 100%;
+    background: transparent;
+    color: white;
+}
+
+body  {
+    background-image: url("./Images/headerTemp4.png");
+    background-repeat: repeat-x;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-size: 20px;
+     font-family: "MyriadSetPro";
+    }
+
+.container1 {
+  position: relative;
+  width: 100%;
+}
+
+@font-face {
+    font-family: "MyriadSetPro";
+    src: url("MyriadSetPro-Thin.ttf");
+     }
+
+@font-face {
+    font-family: "MyriadSetPro-UltraLight";
+    src: url("MyriadSetPro-UltraLight");
+     }
+
+p{font-size:20px;}
+
+#hu {font-size: 36px; color: black; margin-left: 130px; margin-top: 30px;}
+
+header {
+    background-image: url("./Images/lalala.jpg");
+    width: 100%;
+    height: 106px;
+    position: fixed;
+    }
+
+.main {
+    max-width: 100%;
+    height: 550px;
+    position: static;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+aside {
+    background-color: #000044;
+    color: white;
+    width: 250px;
+    height: 450px;
+    position: static;
+    float: left;
+    display: inline-block;
+}
+
+ul { padding: 10px;
+    list-style-type:none;}
+
+li{
+    font-size: 25px;
+    font-family: MyriadSetPro;
+    text-align: center;
+    padding: 15px;
+}
+
+a:link, a:visited    {color:white;
+    text-decoration: none;
+}
+
+a:hover, a:active   { font-size: 30px;
+    color: white;
+}
+
+header:hover {
+    background-image: url("headerTemp22_Fotor.png"); no-repeat;
+} .toto,.bubu, .toto1, .visa,
+
+.div {
+    color: white;
+    max-width: 100%;
+    height: 600px;
+    position: static;
+    margin-top: 10px;
+}
+
+#one {
+    width: 900px;
+    height: 500px;
+    position: static;
+    float: left;
+    display: hidden;
+    border: hidden;
+    margin-left: 30px;
+    }
+
+
+.div1 { background-image: url("./Images/congruent_outline.png");
+color: white;
+padding-top: 30px;
+padding: 30px;
+position: static;
+}
+
+.div2 {background-image: url("./Images/money_transfer_slide - Copy.png");
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        padding-top: 10px;
+        color: black;
+        height: 400px;
+        margin-top: 10px;
+       background-position: right;
+       border: hidden;
+              }
+
+.bubu{background-color: #CCCCCC;
+    padding: 20px;
+}
+
+
+
+#iframe2 {    width:100%;
+    height:400px;
+    margin-right: 50%;
+    padding:0;
+    position:static;
+    overflow:hidden;
+    float: left;
+    border: hidden;
+}
+.slideshow  {
+    width:100%;
+    height:376px;
+    margin-right: 50%;
+    padding:0;
+    position:static;
+    overflow:hidden;
+    float: left;
+}
+
+footer {background-image: url('./Images/IPUG-index-footer1.jpg');
+   height: 450px;
+    }
+
+  .right {
+    max-width: 40%;
+    height: 300px;
+    float: right;
+    display: inline-block;
+    position: relative;
+    padding:30px;
+    }
+  .left {
+    max-width: 40%;
+    position: relative;
+    height: 300px;
+    float: left;
+    display: inline-block;
+    padding: 30px;
+    }
+
+
+#iframe {
+    width: 100%;
+    height: 450px;
+    position: static;
+    overflow: hidden;
+    border: none;
+}
+
+img:hover {
+transform: scale(.1);
+}*/
