@@ -7,3 +7,6 @@
 meteor-platform
 iron:router
 twbs:bootstrap
+jquery-waypoints
+kidovate:parallax
+dburles:google-maps

@@ -13,3 +13,9 @@ Template.header.helpers({
         return active && 'active';
     }
 });
+
+if (Meteor.isClient) {
+    Meteor.startup(function() {
+        GoogleMaps.load();
+    });
+}
