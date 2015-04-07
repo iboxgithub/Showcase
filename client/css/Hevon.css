@@ -1,41 +1,31 @@
 
-    .l-push-4 {
-        margin-left: 16.666666666666664%;
-    }
-
-    .l-span-7 {
-            display: inline;
-            float: left;
-            width: 29.166666666666668%;
-            margin-left: 0%;
-            margin-right: 0%;
-        }
-    form {
-        display: block;
-        margin-top: 0em;
-    }
-
-    input, textarea {
-        -webkit-appearance: none;
-        -webkit-border-radius: 0;
-    }
-    input {
-        line-height: normal;
-    }
-    button, input, optgroup, select, textarea {
-        color: inherit;
-        font: inherit;
-        margin: 0;
-    }
-.cal {
-    height: 287px;
-    width: 376px;
-    background-color: red;
-    }
-.calculator__input-container {
+.b-calculator__input-container {
     width: 336px;
     height: 52px;
+    margin: 1%;
+
+    }
+
+input, textarea {
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+             }
+
+textarea:focus, input:focus{
+    outline: none;
 }
+
+.b-calculator__input-container {
+        box-shadow: 0 1px 1px rgba(128, 128, 128, 0.2);
+        background: #fff;
+        height: 52px;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto 6px;
+        cursor: pointer;
+        color: #354464;
+    }
+
 .b-calculator__input-amount {
     -webkit-font-smoothing: antialiased;
     font-family: 'Sharp Sans Frontieres', 'Helvetica Neue', helvetica, arial, sans-serif;
@@ -49,7 +39,6 @@
     height: 100%;
     padding: 0 16px 0;
 }
-
 .b-calculator__input-label {
     color: #00c6ff;
     font-size: 12px;
@@ -62,13 +51,17 @@
     height: 100%;
     padding: 16px 20px 0;}
 
+.b-calculator__input-label:hover {
+    color: #006ed1;
+}
+
 .b-calculator__input-currency {
     text-align: left;
     float: right;
     position: relative;
     width: 30%;
     height: 100%;
-}
+   }
 
 .b-calculator__input-currency-select {
     font-family: 'Avenir W02', 'Helvetica Neue', helvetica, arial, sans-serif;
@@ -96,26 +89,9 @@
     border-bottom: 1px solid #00a2d1;
 }
 
-.b-calculator__input-currency:after {
-    position: relative;
-    top: 50%;
-    -ms-transform: translate(0, -50%);
-    -moz-transform: translate(0, -50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    content: ' ';
-    position: absolute;
-    right: 12px;
-    left: auto;
-    width: 0;
-    height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 6px solid #fff;
-    pointer-events: none;
-}
 
-    .b-button {
+
+.b-button {
         box-shadow: 0 1px 1px rgba(128, 128, 128, 0.2);
         color: #fff !important;
         font-size: 14px !important;
@@ -130,9 +106,12 @@
         border: 0;
         border-bottom: 1px solid #32aa22;
         min-width: 192px;
+        width: 336px;
         padding: 18px 36px 16px;
         background-color: #46d633;
         cursor: pointer;
+        margin:  6px;
+
     }
 img:hover  {
 transform: scale(1.05);
@@ -164,6 +143,12 @@ transition: transform .25s ease;
     color: white;
     padding: 2%;
     }
+    .ininfo2 {
+        width: 366px;
+        height: 200px;
+        float: right;
+        margin: 5%;
+           }
 
 .row-fluid {
     margin: 0 auto;
@@ -181,7 +166,8 @@ transition: transform .25s ease;
 body  {
     background-image: url("img/blue.jpg");
     background-repeat: repeat-x;
-    width: 100%;}
+    width: 100%;
+   }
 
 .parallax-window {
     height: 400px;
@@ -204,7 +190,27 @@ body  {
     margin: 0px;
 
 ;}
-/*body  {
+/*
+
+.b-calculator__input-currency:after {
+    position: relative;
+    top: 50%;
+    -ms-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    content: ' ';
+    right: 12px;
+    left: auto;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #fff;
+    pointer-events: none;
+}
+
+body  {
     background-image: url("./Images/headerTemp4.png");
     background-repeat: repeat-x;
     margin: 0px;
@@ -375,3 +381,36 @@ footer {background-image: url('./Images/IPUG-index-footer1.jpg');
 img:hover {
 transform: scale(.1);
 }*/
+
+
+/*.l-push-4 {
+    margin-left: 16.666666666666664%;
+}
+
+.l-span-7 {
+        display: inline;
+        float: left;
+        width: 29.166666666666668%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+.cal {
+height: 287px;
+width: 376px;
+background-color: red;
+} */

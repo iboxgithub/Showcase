@@ -1,150 +1,192 @@
 <template name="welcome">
 
-<center>
     <div class="info">
         <div class="ininfo">
             <h1 style="font-size: 60px">HEVON</h1> <p>Welcome to the new age of currency exchange!</p>
         </div>
-
-
+        <div class="ininfo2">
         <div class="l-span-7 l-push-4 l-span-tablet-8 l-push-tablet-3">
 
-            <form action="/request/placeOrder" method="get" name="calculateForm" target="_top" id="calculateForm">
-                <input type="hidden" name="fixType" value="TARGET" id="fixType">
+            <form action="/request/placeOrder" method="get" name="calculateForm" target="_top" id="calculateForm"></form>
+            <input type="hidden" name="fixType" value="TARGET" id="fixType">
 
-                <div class="b-calculator js " data-js="Calculator" data-js-options="{&quot;detailsToggleSelector&quot;: &quot;.js-b-calculator-details-toggle&quot;}">
+            <div class="b-calculator js " data-js="Calculator" data-js-options="{&quot;detailsToggleSelector&quot;: &quot;.js-b-calculator-details-toggle&quot;}">
 
-                    <div class="b-calculator__input-container ">
-                        <label class="b-calculator__input-label" for="b-calculator__input-amount-send">You send</label>
-                        <input type="tel" name="sourceValue" class="b-calculator__input-amount disabled" id="b-calculator__input-amount-send" value="1000" maxlength="12">
-                        <div class="b-calculator__input-currency">
-                            <select name="sourceCurrencyId" class="b-calculator__input-currency-select sourceCurrency"><option value="1">EUR</option><option value="2">GBP</option><option value="3">USD</option><option value="4">PLN</option><option value="5">CHF</option><option value="6">NOK</option><option value="7">SEK</option><option value="8">DKK</option><option value="14">HUF</option><option value="15">GEL</option><option value="30">RON</option><option value="31">TRY</option><option value="40">CZK</option><option value="41">BGN</option><option value="Other" class="other-cur-option">Other</option></select>
-                            <div class="b-calculator__input-currency-current js-source-currency-label">GBP</div>
+                <div class="b-calculator__input-container ">
+
+                    <label class="b-calculator__input-label" for="b-calculator__input-amount-send">You send</label>
+                    <input type="checkbox" value="1" name="isFixTypeTarget" id="isFixTypeTarget" class="l-hide">
+                    <input type="tel" name="sourceValue" class="b-calculator__input-amount disabled" id="b-calculator__input-amount-send" value="1000" maxlength="12">
+                    <div class="b-calculator__input-currency">
+                        <select name="sourceCurrencyId" class="b-calculator__input-currency-select sourceCurrency">
+                                                    <option value="1">EUR</option>
+                                                    <option value="2">GBP</option>
+                                                    <option value="3">USD</option>
+                                                    <option value="4">PLN</option>
+                                                    <option value="5">CHF</option>
+                                                    <option value="6">NOK</option>
+                                                    <option value="7">SEK</option>
+                                                    <option value="8">DKK</option>
+                                                    <option value="14">HUF</option>
+                                                    <option value="15">GEL</option>
+                                                    <option value="30">RON</option>
+                                                    <option value="31">TRY</option>
+                                                    <option value="40">CZK</option>
+                                                    <option value="41">BGN</option>
+                                                    <option value="Other" class="other-cur-option">Other</option></select>
+                        <div class="b-calculator__input-currency-current js-source-currency-label">GBP
                         </div>
                     </div>
+                </div>
+                </div>
 
-                    <div class="b-calculator__input-container ">
-                        <label class="b-calculator__input-label" for="b-calculator__input-amount-receive">Receive</label>
-                        <input type="checkbox" value="1" name="isFixTypeTarget" id="isFixTypeTarget" class="l-hide">
-                        <input type="tel" name="targetValue" class="b-calculator__input-amount" id="b-calculator__input-amount-receive" value="1000" maxlength="12">
-                        <div class="b-calculator__input-currency">
-                            <select name="targetCurrencyId" class="b-calculator__input-currency-select targetCurrency"><option value="1">EUR</option><option value="2">GBP</option><option value="3">USD</option><option value="4">PLN</option><option value="5">CHF</option><option value="6">NOK</option><option value="7">SEK</option><option value="8">DKK</option><option value="9">AUD</option><option value="10">CAD</option><option value="14">HUF</option><option value="15">GEL</option><option value="24">HKD</option><option value="26">INR</option><option value="28">MYR</option><option value="30">RON</option><option value="31">TRY</option><option value="32">NZD</option><option value="33">PHP</option><option value="35">SGD</option><option value="40">CZK</option><option value="41">BGN</option><option value="42">BRL</option><option value="54">NGN</option><option value="55">PKR</option><option value="Other" class="other-cur-option">Other</option></select>
-                            <div class="b-calculator__input-currency-current js-target-currency-label">EUR</div>
-                        </div>
+                <div class="b-calculator__input-container ">
+                    <label class="b-calculator__input-label" for="b-calculator__input-amount-receive">Receive</label>
+                    <input type="checkbox" value="1" name="isFixTypeTarget" id="isFixTypeTarget" class="l-hide">
+                    <input type="tel" name="targetValue" class="b-calculator__input-amount" id="b-calculator__input-amount-receive" value="1000" maxlength="12">
+                    <div class="b-calculator__input-currency">
+                        <select name="targetCurrencyId" class="b-calculator__input-currency-select targetCurrency">
+                            <option value="1">EUR</option>
+                            <option value="2">GBP</option>
+                            <option value="3">USD</option>
+                            <option value="4">PLN</option>
+                            <option value="5">CHF</option>
+                            <option value="6">NOK</option>
+                            <option value="7">SEK</option>
+                            <option value="8">DKK</option>
+                            <option value="9">AUD</option>
+                            <option value="10">CAD</option>
+                            <option value="14">HUF</option>
+                            <option value="15">GEL</option>
+                            <option value="24">HKD</option>
+                            <option value="26">INR</option>
+                            <option value="28">MYR</option>
+                            <option value="30">RON</option>
+                            <option value="31">TRY</option>
+                            <option value="32">NZD</option>
+                            <option value="33">PHP</option>
+                            <option value="35">SGD</option>
+                            <option value="40">CZK</option>
+                            <option value="41">BGN</option>
+                            <option value="42">BRL</option>
+                            <option value="54">NGN</option>
+                            <option value="55">PKR</option>
+                            <option value="Other" class="other-cur-option">Other</option></select>
+                        <div class="b-calculator__input-currency-current js-target-currency-label">EUR</div>
                     </div>
-                   <input class="b-button m-full-width event_calc_make_a_transfer" type="submit" value="Get started">
-                   <!-- <div class="b-calculator__save ">
-            You could save an average of <span class="js-saving-currency-symbol">£</span><span class="js-saving-amount">46.11</span> vs your bank<a href="#" class="b-calculator__details-toggle js-b-calculator-details-toggle"><span></span>Why?</a>
-        </div>
-            <div class="b-calculator__details results js-b-calculator-details">
-                <div class="b-calculator__details-labels">
-                    <strong>Honest rate</strong>
-                    <strong class="m-label-space-hack-for-legal">Lower fee</strong>
-                </div>
-                <div class="b-calculator__details-transferwise">
-                    <strong>TransferWise</strong>
-                    <p>1.35937</p>
-                    <small>
-                        Updated every 11 mins
-                        <img src="/static/images/4.1570_questionmarkx.png" data-interactive="false" data-theme=".tw-default" title="The ‘receive’ amount is based on the last updated mid-market exchange rate. The actual sum received will depend on the mid-market rate at the time of conversion." class="tooltipster b-calculator__tooltip">
-                    </small>
-                    <p>
-                        £ 4.97
-
-                    </p>
-                    <small>No hidden fees</small>
-                </div>
-                <div class="b-calculator__details-bank">
-                    <strong>
-                        Bank average
-                        <img src="/static/images/4.1570_questionmarkx.png" data-interactive="false" data-theme=".tw-default" title="The average bank foreign exchange rate and fee was independently obtained for TransferWise by Charterhouse Research Ltd on June 2014. This data has been used to extrapolate the average rates and fees charged by banks when making foreign currency transfers abroad." class="tooltipster b-calculator__tooltip">
-                    </strong>
-
-                    <p>1.31180</p>
-                    <small>&nbsp;</small>
-                    <p>£ 51.08</p>
-                    <small>&nbsp;</small>
-                </div>
-                <div class="b-calculator__details-link-to-details-container">
-                    <a href="https://transferwise.desk.com/customer/portal/articles/1893701-what-does-%E2%80%9Caverage-bank%E2%80%9D-and-%E2%80%9Cyou%E2%80%99ll-save%E2%80%9D-mean-" class="b-calculator__details-link-to-details">Click here for more details</a>
-                </div>
-
-
-            </div>
-
-        </div>
-        </form>
-
-
-
-
-            <div style="display: none">
-                <div class="js-authenticate-modal">
-                    <a href="#authenticateModal" id="fire-emailCapture" class="hide">fire</a>
-                    <div id="authenticateModal">
-                        <section class="b-authenticate-modal">
-                            <h1>Already a member?</h1>
-                            <form action="/" method="post" name="alreadyAMember" id="alreadyAMember">
-
-                                <input type="hidden" name="sourceValue" value="" id="sourceValue">
-                                <input type="hidden" name="targetValue" value="" id="targetValue">
-                                <input type="hidden" name="sourceCurrencyId" value="" id="sourceCurrencyId">
-                                <input type="hidden" name="targetCurrencyId" value="" id="targetCurrencyId">
-                                <input type="hidden" name="fixType" value="SOURCE" id="fixType">
-                                <input onclick="jQuery.ajax({type:'POST',data:jQuery(this).parents('form:first').serialize(), url:'/authenticationModal/registerFormModal',success:function(data,textStatus){jQuery('#authenticateModal').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false" type="button" value="Not yet" class="b-button m-alternative b-authenticate-modal__not-yet-button">
-                                <input onclick="jQuery.ajax({type:'POST',data:jQuery(this).parents('form:first').serialize(), url:'/authenticationModal/loginFormModal',success:function(data,textStatus){jQuery('#authenticateModal').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false" type="button" value="Yes" class="b-button b-authenticate-modal__yes-button">
-                            </form>
-
-
-                            <div class="b-authenticate-modal__FCA-secured">
-                                100% secure &amp; fully FCA regulated
-                            </div>
-                        </section>
-
-                        <script>
-                            jQuery('.b-authenticate-modal__not-yet-button').click(function () {
-                                LogUtils.sendGoogleAnalyticsEvent('member_modal', 'click_not_yet');
-                            });
-
-                            jQuery('.b-authenticate-modal__yes-button').click(function () {
-                                LogUtils.sendGoogleAnalyticsEvent('member_modal', 'click_yes');
-                            });
-                        </script>
-
                     </div>
-                </div>
+
+                    <input class="b-button m-full-width event_calc_make_a_transfer" type="submit" value="Get started">
+                     </div>
+
+</div>
             </div>
-
-
-
-
-
-        </div>-->
-
-        <!--<div class="cal">
-            lalala
-            <div class="calculator__input-container">
-                <label class="calculator__input-label" for="calculator__input-amount-send">You send</label>
-                <input type="tel" name="sourceValue" class="calculator__input-amount" id="calculator__input-amount-send" value="1000" maxlength="12">
-                <div class="calculator__input-currency">
-                    <select name="sourceCurrencyId" class="calculator__input-currency-select sourceCurrency"><option value="1">EUR</option><option value="2">GBP</option><option value="3">USD</option><option value="4">PLN</option><option value="5">CHF</option><option value="6">NOK</option><option value="7">SEK</option><option value="8">DKK</option><option value="14">HUF</option><option value="15">GEL</option><option value="30">RON</option><option value="31">TRY</option><option value="40">CZK</option><option value="41">BGN</option><option value="Other" class="other-cur-option">Other</option></select>
-                    <div class="calculator__input-currency-current js-source-currency-label">GBP</div>
-                    ::after
-                </div>
+                <div class = "divvisa">
+                <h2>Choose the design of your Hevon card</h2>
+                <img id ="visa1" src="./img/visa1.png" width = "300" href="{{pathFor 'contact'}}">
+                <img id ="visa2" src="./img/visa2.png" width = "300" href="{{pathFor 'contact'}}">
+                <img id ="visa3" src="./img/visa3.png" width = "300" href="{{pathFor 'contact'}}"><br>
+                <img id ="visa4" src="./img/visa4.png" width = "300" href="{{pathFor 'contact'}}">
+                <img id ="visa5" src="./img/visa5.png" width = "300" href="{{pathFor 'contact'}}">
+                <img id ="visa6" src="./img/visa6.png" width = "300" href="{{pathFor 'contact'}}">
             </div>
-        </div>-->
-    </div>
-    <div class = "divvisa">
-        <h2>Choose the design of your Hevon card</h2>
-        <img id ="visa1" src="./img/visa1.png" width = "300" href="{{pathFor 'contact'}}">
-        <img id ="visa2" src="./img/visa2.png" width = "300" href="{{pathFor 'contact'}}">
-        <img id ="visa3" src="./img/visa3.png" width = "300" href="{{pathFor 'contact'}}"><br>
-        <img id ="visa4" src="./img/visa4.png" width = "300" href="{{pathFor 'contact'}}">
-        <img id ="visa5" src="./img/visa5.png" width = "300" href="{{pathFor 'contact'}}">
-        <img id ="visa6" src="./img/visa6.png" width = "300" href="{{pathFor 'contact'}}">
-    </div>
-</center>
+        </template>
+
+<!-- <div class="b-calculator__save ">
+You could save an average of <span class="js-saving-currency-symbol">£</span><span class="js-saving-amount">46.11</span> vs your bank<a href="#" class="b-calculator__details-toggle js-b-calculator-details-toggle"><span></span>Why?</a>
+</div>
+<div class="b-calculator__details results js-b-calculator-details">
+<div class="b-calculator__details-labels">
+<strong>Honest rate</strong>
+<strong class="m-label-space-hack-for-legal">Lower fee</strong>
+</div>
+<div class="b-calculator__details-transferwise">
+<strong>TransferWise</strong>
+<p>1.35937</p>
+<small>
+Updated every 11 mins
+<img src="/static/images/4.1570_questionmarkx.png" data-interactive="false" data-theme=".tw-default" title="The ‘receive’ amount is based on the last updated mid-market exchange rate. The actual sum received will depend on the mid-market rate at the time of conversion." class="tooltipster b-calculator__tooltip">
+</small>
+<p>
+£ 4.97
+
+</p>
+<small>No hidden fees</small>
+</div>
+<div class="b-calculator__details-bank">
+<strong>
+Bank average
+<img src="/static/images/4.1570_questionmarkx.png" data-interactive="false" data-theme=".tw-default" title="The average bank foreign exchange rate and fee was independently obtained for TransferWise by Charterhouse Research Ltd on June 2014. This data has been used to extrapolate the average rates and fees charged by banks when making foreign currency transfers abroad." class="tooltipster b-calculator__tooltip">
+</strong>
+
+<p>1.31180</p>
+<small>&nbsp;</small>
+<p>£ 51.08</p>
+<small>&nbsp;</small>
+</div>
+<div class="b-calculator__details-link-to-details-container">
+<a href="https://transferwise.desk.com/customer/portal/articles/1893701-what-does-%E2%80%9Caverage-bank%E2%80%9D-and-%E2%80%9Cyou%E2%80%99ll-save%E2%80%9D-mean-" class="b-calculator__details-link-to-details">Click here for more details</a>
+</div>
+
+
+</div>
+
+</div>
+</form>
 
 
 
-</template>
+
+<div style="display: none">
+<div class="js-authenticate-modal">
+<a href="#authenticateModal" id="fire-emailCapture" class="hide">fire</a>
+<div id="authenticateModal">
+<section class="b-authenticate-modal">
+<h1>Already a member?</h1>
+<form action="/" method="post" name="alreadyAMember" id="alreadyAMember">
+
+<input type="hidden" name="sourceValue" value="" id="sourceValue">
+<input type="hidden" name="targetValue" value="" id="targetValue">
+<input type="hidden" name="sourceCurrencyId" value="" id="sourceCurrencyId">
+<input type="hidden" name="targetCurrencyId" value="" id="targetCurrencyId">
+<input type="hidden" name="fixType" value="SOURCE" id="fixType">
+<input onclick="jQuery.ajax({type:'POST',data:jQuery(this).parents('form:first').serialize(), url:'/authenticationModal/registerFormModal',success:function(data,textStatus){jQuery('#authenticateModal').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false" type="button" value="Not yet" class="b-button m-alternative b-authenticate-modal__not-yet-button">
+<input onclick="jQuery.ajax({type:'POST',data:jQuery(this).parents('form:first').serialize(), url:'/authenticationModal/loginFormModal',success:function(data,textStatus){jQuery('#authenticateModal').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false" type="button" value="Yes" class="b-button b-authenticate-modal__yes-button">
+</form>
+
+
+<div class="b-authenticate-modal__FCA-secured">
+100% secure &amp; fully FCA regulated
+</div>
+</section>
+
+<script>
+jQuery('.b-authenticate-modal__not-yet-button').click(function () {
+LogUtils.sendGoogleAnalyticsEvent('member_modal', 'click_not_yet');
+});
+
+jQuery('.b-authenticate-modal__yes-button').click(function () {
+LogUtils.sendGoogleAnalyticsEvent('member_modal', 'click_yes');
+});
+</script>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+</div>-->
+
+<!--<div class="cal">
+    lalala
+    <div class="calculator__input-container">
+        <label class="calculator__input-label" for="calculator__input-amount-send">You send</label>
+        <input type="tel" name="sourceValue" class="calculator__input-amount" id="calculator__input-amount-send" value="1000" maxlength="12">
+        <div class="calculator__input-currency">
+            <select name="sourceCurrencyId" class="calculator__input-currency-select sourceCurrency"><option value="1">EUR</option><option value="2">GBP</option><option value="3">USD</option><option value="4">PLN</option><option value="5">CHF</option><option value="6">NOK</option><option value="7">SEK</option><option value="8">DKK</option><option value="14">HUF</option><option value="15">GEL</option><option value="30">RON</option><option value="31">TRY</option><option value="40">CZK</option><option value="41">BGN</option><option value="Other" class="other-cur-option">Other</option></select>
+            <div class="calculator__input-currency-current js-source-currency-label">GBP</div>
+            ::after
+             -->
