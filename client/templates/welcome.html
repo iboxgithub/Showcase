@@ -4,23 +4,23 @@
         <div class="ininfo">
             <h1 style="font-size: 60px">HEVON</h1> <p>Welcome to the new age of currency exchange!</p>
         </div>
-        <div class="ininfo2">
-        <div class="l-span-7 l-push-4 l-span-tablet-8 l-push-tablet-3">
 
-            <form action="/request/placeOrder" method="get" name="calculateForm" target="_top" id="calculateForm"></form>
+        <div class="ininfo2">
+            <form method="get" name="calculateForm" target="_top" id="calculateForm"></form>
+
             <input type="hidden" name="fixType" value="TARGET" id="fixType">
 
-            <div class="b-calculator js " data-js="Calculator" data-js-options="{&quot;detailsToggleSelector&quot;: &quot;.js-b-calculator-details-toggle&quot;}">
+            <div class="b-calculator js ">
 
                 <div class="b-calculator__input-container ">
 
                     <label class="b-calculator__input-label" for="b-calculator__input-amount-send">You send</label>
-                    <input type="checkbox" value="1" name="isFixTypeTarget" id="isFixTypeTarget" class="l-hide">
-                    <input type="tel" name="sourceValue" class="b-calculator__input-amount disabled" id="b-calculator__input-amount-send" value="1000" maxlength="12">
+                    <input type="number" class="b-calculator__input-amount disabled" name="quantity" step= "100" value="1000" maxlength="12">
+
                     <div class="b-calculator__input-currency">
-                        <select name="sourceCurrencyId" class="b-calculator__input-currency-select sourceCurrency">
-                                                    <option value="1">EUR</option>
-                                                    <option value="2">GBP</option>
+                        <select name="sourceCurrencyId" class="b-calculator__input-currency-select">
+                                                    <option value="1">GBP</option>
+                                                    <option value="2">EUR</option>
                                                     <option value="3">USD</option>
                                                     <option value="4">PLN</option>
                                                     <option value="5">CHF</option>
@@ -33,9 +33,9 @@
                                                     <option value="31">TRY</option>
                                                     <option value="40">CZK</option>
                                                     <option value="41">BGN</option>
-                                                    <option value="Other" class="other-cur-option">Other</option></select>
-                        <div class="b-calculator__input-currency-current js-source-currency-label">GBP
-                        </div>
+                                                    </select>
+                        <div class="b-calculator__input-currency-current js-source-currency-label">GBP</div>
+                        ::after
                     </div>
                 </div>
                 </div>
@@ -43,7 +43,7 @@
                 <div class="b-calculator__input-container ">
                     <label class="b-calculator__input-label" for="b-calculator__input-amount-receive">Receive</label>
                     <input type="checkbox" value="1" name="isFixTypeTarget" id="isFixTypeTarget" class="l-hide">
-                    <input type="tel" name="targetValue" class="b-calculator__input-amount" id="b-calculator__input-amount-receive" value="1000" maxlength="12">
+                    <input type="tel" name="targetValue" class="b-calculator__input-amount" id="b-calculator__input-amount-receive" value="1000" maxlength="6">
                     <div class="b-calculator__input-currency">
                         <select name="targetCurrencyId" class="b-calculator__input-currency-select targetCurrency">
                             <option value="1">EUR</option>
@@ -80,7 +80,7 @@
                      </div>
 
 </div>
-            </div>
+<center>
                 <div class = "divvisa">
                 <h2>Choose the design of your Hevon card</h2>
                 <img id ="visa1" src="./img/visa1.png" width = "300" href="{{pathFor 'contact'}}">
@@ -90,6 +90,7 @@
                 <img id ="visa5" src="./img/visa5.png" width = "300" href="{{pathFor 'contact'}}">
                 <img id ="visa6" src="./img/visa6.png" width = "300" href="{{pathFor 'contact'}}">
             </div>
+</center>
         </template>
 
 <!-- <div class="b-calculator__save ">
@@ -179,6 +180,83 @@ LogUtils.sendGoogleAnalyticsEvent('member_modal', 'click_yes');
 
 
 </div>-->
+<!--  <div class="ininfo2">
+        <div class="l-span-7 l-push-4 l-span-tablet-8 l-push-tablet-3">
+
+            <form action="/request/placeOrder" method="get" name="calculateForm" target="_top" id="calculateForm"></form>
+            <input type="hidden" name="fixType" value="TARGET" id="fixType">
+
+            <div class="b-calculator js " data-js="Calculator" data-js-options="{&quot;detailsToggleSelector&quot;: &quot;.js-b-calculator-details-toggle&quot;}">
+
+                <div class="b-calculator__input-container ">
+
+                    <label class="b-calculator__input-label" for="b-calculator__input-amount-send">You send</label>
+                    <input type="checkbox" value="1" name="isFixTypeTarget" id="isFixTypeTarget" class="l-hide">
+                    <input type="tel" name="sourceValue" class="b-calculator__input-amount disabled" id="b-calculator__input-amount-send" value="1000" maxlength="12">
+                    <div class="b-calculator__input-currency">
+                        <select name="sourceCurrencyId" class="b-calculator__input-currency-select sourceCurrency">
+                                                    <option value="1">EUR</option>
+                                                    <option value="2">GBP</option>
+                                                    <option value="3">USD</option>
+                                                    <option value="4">PLN</option>
+                                                    <option value="5">CHF</option>
+                                                    <option value="6">NOK</option>
+                                                    <option value="7">SEK</option>
+                                                    <option value="8">DKK</option>
+                                                    <option value="14">HUF</option>
+                                                    <option value="15">GEL</option>
+                                                    <option value="30">RON</option>
+                                                    <option value="31">TRY</option>
+                                                    <option value="40">CZK</option>
+                                                    <option value="41">BGN</option>
+                                                    <option value="Other" class="other-cur-option">Other</option></select>
+                        <div class="b-calculator__input-currency-current js-source-currency-label">GBP
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="b-calculator__input-container ">
+                    <label class="b-calculator__input-label" for="b-calculator__input-amount-receive">Receive</label>
+                    <input type="checkbox" value="1" name="isFixTypeTarget" id="isFixTypeTarget" class="l-hide">
+                    <input type="tel" name="targetValue" class="b-calculator__input-amount" id="b-calculator__input-amount-receive" value="1000" maxlength="12">
+                    <div class="b-calculator__input-currency">
+                        <select name="targetCurrencyId" class="b-calculator__input-currency-select targetCurrency">
+                            <option value="1">EUR</option>
+                            <option value="2">GBP</option>
+                            <option value="3">USD</option>
+                            <option value="4">PLN</option>
+                            <option value="5">CHF</option>
+                            <option value="6">NOK</option>
+                            <option value="7">SEK</option>
+                            <option value="8">DKK</option>
+                            <option value="9">AUD</option>
+                            <option value="10">CAD</option>
+                            <option value="14">HUF</option>
+                            <option value="15">GEL</option>
+                            <option value="24">HKD</option>
+                            <option value="26">INR</option>
+                            <option value="28">MYR</option>
+                            <option value="30">RON</option>
+                            <option value="31">TRY</option>
+                            <option value="32">NZD</option>
+                            <option value="33">PHP</option>
+                            <option value="35">SGD</option>
+                            <option value="40">CZK</option>
+                            <option value="41">BGN</option>
+                            <option value="42">BRL</option>
+                            <option value="54">NGN</option>
+                            <option value="55">PKR</option>
+                            <option value="Other" class="other-cur-option">Other</option></select>
+                        <div class="b-calculator__input-currency-current js-target-currency-label">EUR</div>
+                    </div>
+                    </div>
+
+                    <input class="b-button m-full-width event_calc_make_a_transfer" type="submit" value="Get started">
+                     </div>
+
+</div>
+            </div>-->
 
 <!--<div class="cal">
     lalala
