@@ -1,3 +1,24 @@
+/*blog*/
+.account.panel.panel-info {
+    width: 100%;
+    height: 700px;
+}
+.post-content {
+    width: 30%;
+    height: 300px;
+    display: inline-block;
+    background-color: antiquewhite;
+    border-color: #006ed1;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+}
+.form-control {
+    border-radius: 0px;
+}
+.input-group-addon {
+    border-radius: 0px;
+}
 .navbar-default .navbar-brand {
     color: black;
     font-size: 30px;
@@ -11,9 +32,11 @@
 
 input, textarea {
         -webkit-appearance: none;
-        -webkit-border-radius: 0;
-             }
-
+        -webkit-border-radius: 0px;
+        }
+.btn {
+    border-radius: 0px;
+}
 textarea:focus, input:focus{
     outline: none;
 }
@@ -81,7 +104,10 @@ textarea:focus, input:focus{
     border: none;
     padding-left: 10px;
 }
-
+.b-calculator__input-currency-select:hover
+{
+    background: #337ab7;
+}
 option {
     background-color: white;
     color: #354464;
