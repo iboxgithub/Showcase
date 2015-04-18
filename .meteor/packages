@@ -10,3 +10,5 @@ twbs:bootstrap
 jquery-waypoints
 kidovate:parallax
 dburles:google-maps
+ian:accounts-ui-bootstrap-3
+accounts-password
