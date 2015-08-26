@@ -50,6 +50,9 @@ body {
 .navbar-default .navbar-brand {
     color: black;
     font-size: 30px;
+}
+
+.navbar {
     margin-bottom: 0px !important;
 }
 .b-calculator__input-container {
@@ -233,7 +236,7 @@ transition: transform .25s ease;
 
 body  {
     background-image: url("img/blue.jpg");
-    background-repeat: repeat-x;
+    background-repeat: repeat-y
     width: 100%;
     font-family: 'Acto-UltraLight',sans-serif;
    }
@@ -272,15 +275,25 @@ body  {
 }
 
 .howitworks {
-    background-color: #337ab7;
+    background-color: #DBFAFF;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .waytobeat {
-    background-image: url("./img/money_transfer_slide.png");
+    background-image: url("/img/money_transfer_slide.png");
     background-size: cover;
+    height: 300px;
+    padding: 20px;
 }
 
+.aboutimg {
+    background-image: url("./img/Screenshot_214.png");
+    background-size: cover;
+    height: 400px;
+}
 .support {
     background-image: url("./img/Screenshot_214 (2).png");
     background-size: cover;
-    height: 300px;
+    height: 400px;
 }
