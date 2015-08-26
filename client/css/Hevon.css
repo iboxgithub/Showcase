@@ -1,3 +1,31 @@
+@font-face {
+    font-family: "Acto-UltraLight";
+    src: url("/Fonts/Acto/Acto-UltraLight.otf");
+}
+.parallax-window {
+    height: 400px;
+    width: 100%;
+    background: transparent;
+    color: white;
+}
+
+body {
+    font-size: 16px;
+}
+
+.lala {
+    background-color: #0B1219;
+    opacity: 0.7;
+    height: 70px;
+    width: 495px;
+    position: relative;
+    font-size: 24px;
+    float: left;
+    line-height: 2;
+    padding: 10px;
+
+}
+
 /*blog*/
 .account.panel.panel-info {
     width: 100%;
@@ -22,6 +50,7 @@
 .navbar-default .navbar-brand {
     color: black;
     font-size: 30px;
+    margin-bottom: 0px !important;
 }
 .b-calculator__input-container {
     width: 336px;
@@ -206,6 +235,7 @@ body  {
     background-image: url("img/blue.jpg");
     background-repeat: repeat-x;
     width: 100%;
+    font-family: 'Acto-UltraLight',sans-serif;
    }
 
 .parallax-window {
@@ -217,8 +247,9 @@ body  {
 
 .map-container {
     width:550px;
-    max-width: 100%;
-    height: 300px;
+    max-width: 80%;
+    height: 200px;
+    margin-bottom: 10%;
 }
 
 .footer {
@@ -229,227 +260,27 @@ body  {
     margin: 0px;
 
 ;}
-/*
 
-.b-calculator__input-currency:after {
-    position: relative;
-    top: 50%;
-    -ms-transform: translate(0, -50%);
-    -moz-transform: translate(0, -50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    content: ' ';
-    right: 12px;
-    left: auto;
-    width: 0;
-    height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 6px solid #fff;
-    pointer-events: none;
+.contact {
+    background-color: white !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-body  {
-    background-image: url("./Images/headerTemp4.png");
-    background-repeat: repeat-x;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    font-size: 20px;
-     font-family: "MyriadSetPro";
-    }
-
-.container1 {
-  position: relative;
-  width: 100%;
+.input-group-addon {
+    visibility: hidden;
 }
 
-@font-face {
-    font-family: "MyriadSetPro";
-    src: url("MyriadSetPro-Thin.ttf");
-     }
-
-@font-face {
-    font-family: "MyriadSetPro-UltraLight";
-    src: url("MyriadSetPro-UltraLight");
-     }
-
-p{font-size:20px;}
-
-#hu {font-size: 36px; color: black; margin-left: 130px; margin-top: 30px;}
-
-header {
-    background-image: url("./Images/lalala.jpg");
-    width: 100%;
-    height: 106px;
-    position: fixed;
-    }
-
-.main {
-    max-width: 100%;
-    height: 550px;
-    position: static;
-    padding-top: 100px;
-    padding-left: 50px;
+.howitworks {
+    background-color: #337ab7;
+}
+.waytobeat {
+    background-image: url("./img/money_transfer_slide.png");
+    background-size: cover;
 }
 
-aside {
-    background-color: #000044;
-    color: white;
-    width: 250px;
-    height: 450px;
-    position: static;
-    float: left;
-    display: inline-block;
-}
-
-ul { padding: 10px;
-    list-style-type:none;}
-
-li{
-    font-size: 25px;
-    font-family: MyriadSetPro;
-    text-align: center;
-    padding: 15px;
-}
-
-a:link, a:visited    {color:white;
-    text-decoration: none;
-}
-
-a:hover, a:active   { font-size: 30px;
-    color: white;
-}
-
-header:hover {
-    background-image: url("headerTemp22_Fotor.png"); no-repeat;
-} .toto,.bubu, .toto1, .visa,
-
-.div {
-    color: white;
-    max-width: 100%;
-    height: 600px;
-    position: static;
-    margin-top: 10px;
-}
-
-#one {
-    width: 900px;
-    height: 500px;
-    position: static;
-    float: left;
-    display: hidden;
-    border: hidden;
-    margin-left: 30px;
-    }
-
-
-.div1 { background-image: url("./Images/congruent_outline.png");
-color: white;
-padding-top: 30px;
-padding: 30px;
-position: static;
-}
-
-.div2 {background-image: url("./Images/money_transfer_slide - Copy.png");
-        background-repeat: no-repeat;
-        padding-left: 30px;
-        padding-top: 10px;
-        color: black;
-        height: 400px;
-        margin-top: 10px;
-       background-position: right;
-       border: hidden;
-              }
-
-.bubu{background-color: #CCCCCC;
-    padding: 20px;
-}
-
-
-
-#iframe2 {    width:100%;
-    height:400px;
-    margin-right: 50%;
-    padding:0;
-    position:static;
-    overflow:hidden;
-    float: left;
-    border: hidden;
-}
-.slideshow  {
-    width:100%;
-    height:376px;
-    margin-right: 50%;
-    padding:0;
-    position:static;
-    overflow:hidden;
-    float: left;
-}
-
-footer {background-image: url('./Images/IPUG-index-footer1.jpg');
-   height: 450px;
-    }
-
-  .right {
-    max-width: 40%;
+.support {
+    background-image: url("./img/Screenshot_214 (2).png");
+    background-size: cover;
     height: 300px;
-    float: right;
-    display: inline-block;
-    position: relative;
-    padding:30px;
-    }
-  .left {
-    max-width: 40%;
-    position: relative;
-    height: 300px;
-    float: left;
-    display: inline-block;
-    padding: 30px;
-    }
-
-
-#iframe {
-    width: 100%;
-    height: 450px;
-    position: static;
-    overflow: hidden;
-    border: none;
 }
-
-img:hover {
-transform: scale(.1);
-}*/
-
-
-/*.l-push-4 {
-    margin-left: 16.666666666666664%;
-}
-
-.l-span-7 {
-        display: inline;
-        float: left;
-        width: 29.166666666666668%;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-form {
-    display: block;
-    margin-top: 0em;
-}
-button, input, optgroup, select, textarea {
-    color: inherit;
-    font: inherit;
-    margin: 0;
-}
-
-input {
-    line-height: normal;
-}
-
-.cal {
-height: 287px;
-width: 376px;
-background-color: red;
-} */

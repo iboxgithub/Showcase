@@ -1,7 +1,3 @@
-/**
- * Created by Maria on 4/5/2015.
- */
-
 Template.contact.helpers({
     exampleMapOptions: function() {
         // Make sure the maps API has loaded

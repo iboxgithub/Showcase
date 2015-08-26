@@ -1,10 +1,11 @@
 <template name="welcome">
-
     <div class="info">
         <div class="ininfo">
-            <h1 style="font-size: 60px">HEVON</h1> <p>Welcome to the new age of currency exchange!</p>
-        </div>
+            <h1 style="font-size: 60px">HEVON</h1>
 
+
+        <div class="lala"><p>Welcome to the new age of currency exchange!</p></div>
+        </div>
         <div class="ininfo2">
             <form method="get" name="calculateForm" target="_top" id="calculateForm"></form>
 
@@ -80,8 +81,9 @@
                      </div>
 
 </div>
-<center>
-                <div class = "divvisa">
+
+    <center>
+    <div class = "divvisa">
                 <h2>Choose the design of your Hevon card</h2>
                 <img id ="visa1" src="./img/visa1.png" width = "300" href="{{pathFor 'contact'}}">
                 <img id ="visa2" src="./img/visa2.png" width = "300" href="{{pathFor 'contact'}}">
@@ -91,7 +93,39 @@
                 <img id ="visa6" src="./img/visa6.png" width = "300" href="{{pathFor 'contact'}}">
             </div>
 </center>
-        </template>
+    <div class = "howitworks">
+        <h2>HOW IT WORKS</h2>
+        <p>With our secure Payment Engine you can complete the transaction in four simple steps</p>
+        <h3>Step 1 - Set up a payment</h3>
+        <p>Set up a payment and send us the money. If you make lots of payments you can also send money in advance, which will speed up the process</p>
+        <h3>Step 2 - Convert the currency</h3>
+        <p>When you are ready, convert the currency. You benefit from our low costs and we will show you the mid market rate for full transparency</p>
+        <h3>Step 3 - Tell us where to send the money</h3>
+        <p>Tell us where you want to send the money. We only take the details we need to make a successful payment</p>
+    </div>
+
+    <div class="parallax-window" data-parallax="scroll"
+         data-image-src="./img/Zermatt-Street-Germany-Desktop-Background.jpg"></div>
+
+    <div class= "waytobeat">
+        <h2>THE CLEVER NEW WAY TO BEAT BANK FEES</h2>
+        <p>Banks charge huge hidden fees</p>
+        <p>when you send money abroad.</p>
+        <p>With Hevon you save up to 90.</p>
+        <p>Problem solved, money saved.</p>
+    </div>
+
+    <div class="parallax-container" data-parallax="scroll"
+         data-position="top" data-bleed="10" data-image-src="./Images/paris.jpg"
+         data-natural-width="1400" data-natural-height="900" style="height: 450px;"></div>
+
+
+    <div class="support"></div>
+
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="./img/paris.jpg"></div>
+
+</template>
 
 <!-- <div class="b-calculator__save ">
 You could save an average of <span class="js-saving-currency-symbol">£</span><span class="js-saving-amount">46.11</span> vs your bank<a href="#" class="b-calculator__details-toggle js-b-calculator-details-toggle"><span></span>Why?</a>
