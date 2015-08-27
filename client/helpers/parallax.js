@@ -1,5 +1,3 @@
-Template.about.onRendered(function() {
-    $('.parallax-window').parallax(
-        {imageSrc: './img/woman.jpg'
-    });
+Template.welcome.onRendered(function() {
+    $('.parallax').parallax();
 });

@@ -1,130 +1,72 @@
 <template name="welcome">
+    <div class="container-fluid">
     <div class="info">
         <div class="ininfo">
             <h1 style="font-size: 60px">HEVON</h1>
-
-
-        <div class="lala"><p>Welcome to the new age of currency exchange!</p></div>
+             <div class="lala"><p>Welcome to the new age of currency exchange!</p></div>
         </div>
-        <div class="ininfo2">
-            <form method="get" name="calculateForm" target="_top" id="calculateForm"></form>
-
-            <input type="hidden" name="fixType" value="TARGET" id="fixType">
-
-            <div class="b-calculator js ">
-
-                <div class="b-calculator__input-container ">
-
-                    <label class="b-calculator__input-label" for="b-calculator__input-amount-send">You send</label>
-                    <input type="number" class="b-calculator__input-amount disabled" name="quantity" step= "100" value="1000" maxlength="12">
-
-                    <div class="b-calculator__input-currency">
-                        <select name="sourceCurrencyId" class="b-calculator__input-currency-select">
-                                                    <option value="1">GBP</option>
-                                                    <option value="2">EUR</option>
-                                                    <option value="3">USD</option>
-                                                    <option value="4">PLN</option>
-                                                    <option value="5">CHF</option>
-                                                    <option value="6">NOK</option>
-                                                    <option value="7">SEK</option>
-                                                    <option value="8">DKK</option>
-                                                    <option value="14">HUF</option>
-                                                    <option value="15">GEL</option>
-                                                    <option value="30">RON</option>
-                                                    <option value="31">TRY</option>
-                                                    <option value="40">CZK</option>
-                                                    <option value="41">BGN</option>
-                                                    </select>
-                        <div class="b-calculator__input-currency-current js-source-currency-label">GBP</div>
-                        ::after
-                    </div>
-                </div>
-                </div>
-
-                <div class="b-calculator__input-container ">
-                    <label class="b-calculator__input-label" for="b-calculator__input-amount-receive">Receive</label>
-                    <input type="checkbox" value="1" name="isFixTypeTarget" id="isFixTypeTarget" class="l-hide">
-                    <input type="tel" name="targetValue" class="b-calculator__input-amount" id="b-calculator__input-amount-receive" value="1000" maxlength="6">
-                    <div class="b-calculator__input-currency">
-                        <select name="targetCurrencyId" class="b-calculator__input-currency-select targetCurrency">
-                            <option value="1">EUR</option>
-                            <option value="2">GBP</option>
-                            <option value="3">USD</option>
-                            <option value="4">PLN</option>
-                            <option value="5">CHF</option>
-                            <option value="6">NOK</option>
-                            <option value="7">SEK</option>
-                            <option value="8">DKK</option>
-                            <option value="9">AUD</option>
-                            <option value="10">CAD</option>
-                            <option value="14">HUF</option>
-                            <option value="15">GEL</option>
-                            <option value="24">HKD</option>
-                            <option value="26">INR</option>
-                            <option value="28">MYR</option>
-                            <option value="30">RON</option>
-                            <option value="31">TRY</option>
-                            <option value="32">NZD</option>
-                            <option value="33">PHP</option>
-                            <option value="35">SGD</option>
-                            <option value="40">CZK</option>
-                            <option value="41">BGN</option>
-                            <option value="42">BRL</option>
-                            <option value="54">NGN</option>
-                            <option value="55">PKR</option>
-                            <option value="Other" class="other-cur-option">Other</option></select>
-                        <div class="b-calculator__input-currency-current js-target-currency-label">EUR</div>
-                    </div>
-                    </div>
-
-                    <input class="b-button m-full-width event_calc_make_a_transfer" type="submit" value="Get started">
-                     </div>
-
+        {{> conventor}}
 </div>
-
-    <center>
-    <div class = "divvisa">
-                <h2>Choose the design of your Hevon card</h2>
-                <img id ="visa1" src="./img/visa1.png" width = "300" href="{{pathFor 'contact'}}">
-                <img id ="visa2" src="./img/visa2.png" width = "300" href="{{pathFor 'contact'}}">
-                <img id ="visa3" src="./img/visa3.png" width = "300" href="{{pathFor 'contact'}}"><br>
-                <img id ="visa4" src="./img/visa4.png" width = "300" href="{{pathFor 'contact'}}">
-                <img id ="visa5" src="./img/visa5.png" width = "300" href="{{pathFor 'contact'}}">
-                <img id ="visa6" src="./img/visa6.png" width = "300" href="{{pathFor 'contact'}}">
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="http://img0.ndsstatic.com/wallpapers/142ca90436b9eb774e26fe1c7a47b4d5_large.jpeg"></div>
+    </div>
+    <div class="section white">
+        <div class="row container">
+            {{> visa}}
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="http://img0.ndsstatic.com/wallpapers/142ca90436b9eb774e26fe1c7a47b4d5_large.jpeg"></div>
+    </div>
+    <div class="section white">
+        <div class="row container">
+            {{> soon}}
+        </div>
+    </div>
+        <div class="parallax-container">
+            <div class="parallax"><img src="./img/parallax/woman.jpg"></div>
+        </div>
+    <div class="section white">
+        <div class="row container">
+            <div class = "howitworks">
+                <h2>HOW IT WORKS</h2>
+                <p>With our secure Payment Engine you can complete the transaction in four simple steps</p>
+                <h3>Step 1 - Set up a payment</h3>
+                <p>Set up a payment and send us the money. If you make lots of payments you can also send money in advance, which will speed up the process</p>
+                <h3>Step 2 - Convert the currency</h3>
+                <p>When you are ready, convert the currency. You benefit from our low costs and we will show you the mid market rate for full transparency</p>
+                <h3>Step 3 - Tell us where to send the money</h3>
+                <p>Tell us where you want to send the money. We only take the details we need to make a successful payment</p>
             </div>
-</center>
-    <div class = "howitworks">
-        <h2>HOW IT WORKS</h2>
-        <p>With our secure Payment Engine you can complete the transaction in four simple steps</p>
-        <h3>Step 1 - Set up a payment</h3>
-        <p>Set up a payment and send us the money. If you make lots of payments you can also send money in advance, which will speed up the process</p>
-        <h3>Step 2 - Convert the currency</h3>
-        <p>When you are ready, convert the currency. You benefit from our low costs and we will show you the mid market rate for full transparency</p>
-        <h3>Step 3 - Tell us where to send the money</h3>
-        <p>Tell us where you want to send the money. We only take the details we need to make a successful payment</p>
+        </div>
     </div>
-
-    <div class="parallax-window" data-parallax="scroll"
-         data-image-src="./img/Zermatt-Street-Germany-Desktop-Background.jpg"></div>
-
-    <div class= "waytobeat">
-        <h2>THE CLEVER NEW WAY TO BEAT BANK FEES</h2>
-        <p>Banks charge huge hidden fees</p>
-        <p>when you send money abroad.</p>
-        <p>With Hevon you save up to 90.</p>
-        <p>Problem solved, money saved.</p>
+        <div class="parallax-container">
+            <div class="parallax"><img src="./img/parallax/zermat.jpg"></div>
+        </div>
+    <div class="section white">
+        <div class="row container">
+            <div class= "waytobeat">
+                <h2>THE CLEVER NEW WAY TO BEAT BANK FEES</h2>
+                <p>Banks charge huge hidden fees</p>
+                <p>when you send money abroad.</p>
+                <p>With Hevon you save up to 90.</p>
+                <p>Problem solved, money saved.</p>
+            </div>
+        </div>
     </div>
-
-    <div class="parallax-container" data-parallax="scroll"
-         data-position="top" data-bleed="10" data-image-src="./Images/paris.jpg"
-         data-natural-width="1400" data-natural-height="900" style="height: 450px;"></div>
-
-
-    <div class="support"></div>
-
-
-    <div class="parallax-window" data-parallax="scroll" data-image-src="./img/paris.jpg"></div>
-
+    <div class="parallax-container">
+        <div class="parallax"><img src="./img/parallax/paris.jpg"></div>
+    </div>
+    <div class="section white">
+        <div class="row container">
+            <div class="support"></div>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="./img/parallax/paris.jpg"></div>
+    </div>
+        </div>
 </template>
 
 <!-- <div class="b-calculator__save ">

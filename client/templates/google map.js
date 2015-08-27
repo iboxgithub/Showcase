@@ -4,7 +4,7 @@ Template.contact.helpers({
         if (GoogleMaps.loaded()) {
             // Map initialization options
             return {
-                center: new google.maps.LatLng(48.853, 2.35),
+                center: new google.maps.LatLng(48.8621253, 2.375057599999991),
                 zoom: 15
             };
         }

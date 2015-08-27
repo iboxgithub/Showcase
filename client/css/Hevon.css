@@ -2,12 +2,6 @@
     font-family: "Acto-UltraLight";
     src: url("/Fonts/Acto/Acto-UltraLight.otf");
 }
-.parallax-window {
-    height: 400px;
-    width: 100%;
-    background: transparent;
-    color: white;
-}
 
 body {
     font-size: 16px;
@@ -184,11 +178,11 @@ option {
     background-color: #32aa22;
 }
 
-img:hover  {
+.imgs:hover  {
 transform: scale(1.05);
 }
     
-img {
+.imgs {
 transition: transform .25s ease;
 }
 
@@ -199,10 +193,14 @@ transition: transform .25s ease;
     background-color: white;
     width: 100%;
 }
+
+.img-responsive {
+    display: inline-block;
+}
+
 .info {
     width: 100%;
     height: 600px;
-    margin-bottom: 50px;
     background-image: url("./img/hevon.jpg");
     background-size: cover;
    }
@@ -234,23 +232,7 @@ transition: transform .25s ease;
 
       }
 
-body  {
-    background-image: url("img/blue.jpg");
-    background-repeat: repeat-y
-    width: 100%;
-    font-family: 'Acto-UltraLight',sans-serif;
-   }
-
-.parallax-window {
-    height: 400px;
-    width: 100%;
-    background: transparent;
-    color: white;
-}
-
 .map-container {
-    width:550px;
-    max-width: 80%;
     height: 200px;
     margin-bottom: 10%;
 }
@@ -258,16 +240,23 @@ body  {
 .footer {
     height: 40px;
     width: 100%;
-    background-color: darkseagreen;
+    background-color: #e7e7e7;
     padding: 10px;
     margin: 0px;
+    margin-top: 30px;
 
 ;}
 
+.container {
+    min-height: 500px;
+}
+
 .contact {
-    background-color: white !important;
     padding-top: 15px;
     padding-bottom: 15px;
+    background-color: #e7e7e7;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
 }
 
 .input-group-addon {
@@ -289,11 +278,154 @@ body  {
 
 .aboutimg {
     background-image: url("./img/Screenshot_214.png");
-    background-size: cover;
-    height: 400px;
+    background-size: contain;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.about {
+    margin-top: 20px;
 }
 .support {
     background-image: url("./img/Screenshot_214 (2).png");
     background-size: cover;
     height: 400px;
+}
+
+
+/*Scroll to top button*/
+.Top {
+    text-align: center;
+    position : fixed ;
+    bottom : 20px;
+    right : 20px ;
+    background: darkgray;
+    padding : 3px 5px;
+    width: 55.5px;
+    height: 55.5px;
+    box-sizing : border-box ;
+    font-size : 30px;
+    border-radius : 100% ;
+    color : white ;
+    cursor : pointer ;
+    z-index : 10 ;
+    display : none;
+    box-shadow: 0px 0px 5px 0px #333;
+}
+
+/*scroll bottom*/
+section {
+    float: left;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 0 5px 0px #333;
+}
+/* the important styles */
+
+.arrow-wrap {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: -5em;
+    margin-left: -5em;
+    background: #00838f;
+    width: 55px;
+    height: 55px;
+    padding: 4em 2em;
+    border-radius: 50%;
+    font-size: 0.3333em;
+    display: block;
+    box-shadow: 0px 0px 5px 0px #333;
+}
+
+.arrow {
+    float: left;
+    position: relative;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 3em 3em 0 3em;
+    border-color: #ffffff transparent transparent transparent;
+    -webkit-transform: rotate(360deg)
+}
+
+.arrow:after {
+    content: '';
+    position: absolute;
+    top: -3.2em;
+    left: -3em;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 3em 3em 0 3em;
+    border-color: #00838f transparent transparent transparent;
+    -webkit-transform: rotate(360deg)
+}
+
+.hint {
+    position: absolute;
+    top: 0.6em;
+    width: 100%;
+    left: 0;
+    font-size: 2em;
+    font-style: italic;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+}
+
+.arrow-wrap:hover .hint {
+    opacity: 1;
+}
+
+@-webkit-keyframes arrows {
+    0% {
+        top: 0;
+    }
+    10% {
+        top: 12%;
+    }
+    20% {
+        top: 0;
+    }
+    30% {
+        top: 12%;
+    }
+    40% {
+        top: -12%;
+    }
+    50% {
+        top: 12%;
+    }
+    60% {
+        top: 0;
+    }
+    70% {
+        top: 12%;
+    }
+    80% {
+        top: -12%;
+    }
+    90% {
+        top: 12%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.arrow-wrap .arrow {
+    -webkit-animation: arrows 2.8s 0.4s;
+    -webkit-animation-delay: 3s;
+}
+/*  this is the unimportant CSS used just to layout the content  */
+
+.scroll {
+    margin-top: 30px;
+}
+
+.parallax-container {
+    height: 300px;
 }
