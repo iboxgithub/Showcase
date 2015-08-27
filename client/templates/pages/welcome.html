@@ -1,34 +1,38 @@
 <template name="welcome">
-    <div class="container-fluid">
-    <div class="info">
-        <div class="ininfo">
-            <h1 style="font-size: 60px">HEVON</h1>
-             <div class="lala"><p>Welcome to the new age of currency exchange!</p></div>
+<div class="container-fluid">
+    <div class="section white">
+        <div class="row">
+            {{> info}}
         </div>
-        {{> conventor}}
-</div>
-    <div class="parallax-container">
-        <div class="parallax">
-            <img src="http://img0.ndsstatic.com/wallpapers/142ca90436b9eb774e26fe1c7a47b4d5_large.jpeg"></div>
     </div>
     <div class="section white">
-        <div class="row container">
+        <div class="row">
+            {{> loginButtons}}
+            {{>shareit shareData}}
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="./img/parallax/woman.jpg"></div>
+    </div>
+    <div class="section white">
+        <div class="row">
             {{> visa}}
         </div>
     </div>
     <div class="parallax-container">
-        <div class="parallax"><img src="http://img0.ndsstatic.com/wallpapers/142ca90436b9eb774e26fe1c7a47b4d5_large.jpeg"></div>
+        <div class="parallax"><img src="./img/parallax/woman.jpg"></div>
     </div>
     <div class="section white">
-        <div class="row container">
-            {{> soon}}
+        <div class="row">
+            {{> loginButtons}}
+            {{>shareit shareData}}
         </div>
     </div>
         <div class="parallax-container">
-            <div class="parallax"><img src="./img/parallax/woman.jpg"></div>
+            <div class="parallax"><img src="./img/parallax/zermat.jpg"></div>
         </div>
     <div class="section white">
-        <div class="row container">
+        <div class="row">
             <div class = "howitworks">
                 <h2>HOW IT WORKS</h2>
                 <p>With our secure Payment Engine you can complete the transaction in four simple steps</p>
@@ -42,7 +46,7 @@
         </div>
     </div>
         <div class="parallax-container">
-            <div class="parallax"><img src="./img/parallax/zermat.jpg"></div>
+            <div class="parallax"><img src="./img/parallax/paris.jpg"></div>
         </div>
     <div class="section white">
         <div class="row container">
@@ -53,14 +57,6 @@
                 <p>With Hevon you save up to 90.</p>
                 <p>Problem solved, money saved.</p>
             </div>
-        </div>
-    </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="./img/parallax/paris.jpg"></div>
-    </div>
-    <div class="section white">
-        <div class="row container">
-            <div class="support"></div>
         </div>
     </div>
     <div class="parallax-container">

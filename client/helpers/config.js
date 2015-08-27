@@ -40,7 +40,7 @@ Template.layout.onRendered(function(){
 });
 
 //Code for smooth scrolling:
-Template.aboutme.onRendered(function() {
+Template.scrolldown.onRendered(function() {
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

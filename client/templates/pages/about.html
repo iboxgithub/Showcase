@@ -1,7 +1,6 @@
 <template name="about">
-    <div class="container">
     <div class="row about">
-    <div class="col-lg-6">
+    <div class="col s12 m6 l6">
     <div style="background-color: white; padding:20px;">
     <h3>Introduction HEVON</h3>
     <p style="text-align: justify">
@@ -11,8 +10,16 @@
     </p>
     </div>
     </div>
-    <div class="aboutimg col-lg-6">
+    <div class="aboutimg col s12 m6 l6">
     </div>
     </div>
+<br>
+    <br>
+    {{>scrolldown}}
+
+    <div class="row">
+        <div id="content">
+            {{>visa}}
+        </div>
     </div>
 </template>
