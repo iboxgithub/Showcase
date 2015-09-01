@@ -22,10 +22,14 @@ nav .brand-logo {
 
 .info {
     height: 600px;
-    background-image: url("./img/3d-abstract_widewallpaper_freedom_55503 - Copy.jpg");
+    background-image: url("./img/parallax/sparkler.jpg");
     background-size: cover;
 }
-
+.fa-facebook, .fa-google-plus, .fa-twitter {
+    font-size: 23px;
+    margin-right: 15px;
+    margin-top: 20px;
+}
 .divvisa {
     display: inline-block;
     padding:50px;
@@ -49,13 +53,11 @@ fieldset {
     margin-top: 20px;
 }
 .footer {
-    height: 40px;
+    height: 60px;
     width: 100%;
     background-color: #e7e7e7;
     padding: 10px;
     margin: 0px;
-    margin-top: 30px;
-
 ;}
 
 .container, .container-fluid {
@@ -63,7 +65,6 @@ fieldset {
 }
 
 .howitworks {
-    background-color: #DBFAFF;
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -71,7 +72,7 @@ fieldset {
 .waytobeat {
     background-image: url("/img/money_transfer_slide.png");
     background-size: cover;
-    height: 300px;
+    height: 350px;
     padding: 20px;
 }
 
@@ -112,7 +113,7 @@ fieldset {
 }
 
 .parallax-container {
-    height: 300px;
+    height: 500px;
 }
 
 .share {

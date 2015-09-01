@@ -7,9 +7,10 @@
 meteor-platform
 iron:router
 dburles:google-maps
-ian:accounts-ui-bootstrap-3
 accounts-password
 joshowens:shareit
 fortawesome:fontawesome
 bredikhin:contact-form
 materialize:materialize
+email
+aldeed:autoform

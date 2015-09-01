@@ -1,0 +1,22 @@
+<template name="email">
+    <div class="row blue-grey lighten-4" style="margin-top: 70px; margin-bottom: 0px;">
+        <div class="col s12 m4 offset-m4 l4 offset-l4">
+        <form class="col s12">
+            <div class="row">
+               <h5 class="center-align"><i class="fa fa-rocket"></i> LAUNCHING SOON</h5>
+                <p class="center-align">Be the first to know...</p>
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email" data-error="wrong" data-success="right">Email</label>
+                    <button class="btn waves-effect waves-light right" type="submit" name="action">Submit
+                        <i class="mdi-album"></i>
+                    </button>
+                </div>
+              <div class="center-align">
+                {{>shareit shareData}}
+              </div>
+            </div>
+        </form>
+        </div>
+    </div>
+</template>

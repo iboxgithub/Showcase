@@ -1,7 +1,7 @@
-Template.header.helpers({
+Template.welcome.helpers({
     shareData: function() {
         return {
-            title: this.data,
+            title: this.data
         }
     }});
 
@@ -18,8 +18,8 @@ ShareIt.configure({
     // Don't put text on the sharing buttons
     applyColors: false,     // boolean (default: true)
     // apply classes to inherit each social networks background color
-    faSize: '',            // font awesome size
-    faClass: ''       // font awesome classes like square
+    faSize: '20',            // font awesome size
+    faClass: 'square'       // font awesome classes like square
 });
 
 ShareIt.configure({
