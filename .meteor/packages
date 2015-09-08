@@ -7,10 +7,9 @@
 meteor-platform
 iron:router
 dburles:google-maps
-accounts-password
 joshowens:shareit
 fortawesome:fontawesome
 bredikhin:contact-form
 materialize:materialize
 email
-aldeed:autoform
+insecure

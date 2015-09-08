@@ -5,7 +5,7 @@ body {
 
 @font-face {
     font-family: "Acto-UltraLight";
-    src: url("/Fonts/Acto/Acto-UltraLight.otf");
+    src: url("../../public/Fonts/Acto/Acto-UltraLight.otf");
 }
 
 .map-container {
@@ -22,7 +22,7 @@ nav .brand-logo {
 
 .info {
     height: 600px;
-    background-image: url("./img/parallax/sparkler.jpg");
+    background-image: url("../../public/img/parallax/sparkler.jpg");
     background-size: cover;
 }
 .fa-facebook, .fa-google-plus, .fa-twitter {
@@ -57,7 +57,7 @@ fieldset {
     width: 100%;
     background-color: #e7e7e7;
     padding: 10px;
-    margin: 0px;
+    margin: 0;
 ;}
 
 .container, .container-fluid {
@@ -70,7 +70,7 @@ fieldset {
     padding-bottom: 10px;
 }
 .waytobeat {
-    background-image: url("/img/money_transfer_slide.png");
+    background-image: url("../../public/img/money_transfer_slide.png");
     background-size: cover;
     height: 350px;
     padding: 20px;
@@ -78,7 +78,7 @@ fieldset {
 
 /*about template*/
 .aboutimg {
-    background-image: url("./img/Screenshot_214.png");
+    background-image: url("../../public/img/Screenshot_214.png");
     background-size: contain;
     height: 350px;
     background-repeat: no-repeat;
@@ -96,8 +96,8 @@ fieldset {
     right : 20px ;
     background: darkgray;
     padding : 3px 5px;
-    width: 55.5px;
-    height: 55.5px;
+    width: 55px;
+    height: 55px;
     box-sizing : border-box ;
     font-size : 30px;
     border-radius : 100% ;
@@ -105,7 +105,7 @@ fieldset {
     cursor : pointer ;
     z-index : 10 ;
     display : none;
-    box-shadow: 0px 0px 5px 0px #333;
+    box-shadow: 0 0 5px 0 #333;
 }
 
 .scroll {

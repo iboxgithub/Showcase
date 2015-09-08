@@ -1,4 +1,4 @@
-Template.welcome.helpers({
+Template.email.helpers({
     shareData: function() {
         return {
             title: this.data

@@ -1,42 +1,48 @@
 <template name="contact">
 
     <div class="row contactrow">
-        <div class="contact col s12 m6 l5">
+        <div class="contact col s12 m6 l3 offset-l1">
             <h5>Write us</h5>
             <div class="z-depth-2">
                 {{>contactForm}}
             </div>
         </div>
-        <div class="col m6 s12 l1">
-            <img src="img/ben.jpg" alt="" class="responsive-img" style="height: 80px; margin-top: 50px;">
+
+        <div class="col s12 m8 l6" style="margin-top: 41px">
+            <div class="card-panel grey lighten-5 z-depth-1">
+                <div class="row">
+                    <div class="col s2 m12 l3">
+                        <img src="../public/img/ben.png" alt="" class="circle responsive-img" style="margin-top: 20px">
+                    </div>
+
+                    <div class="col s10 m12 l5">
+                    <address>
+                        <h5>Contact</h5>
+                        CEO & Founder: <br> Benjamin Geyre<br>
+                        <strong>Support:</strong>+33 (0) 672692324<br>
+                        <strong>Email:</strong>
+                        <a href="mailto:#">contact@hevon.co</a>
+                    </address>
+                    </div>
+
+                    <div class="col s10 m12 l4">
+                    <address>
+                        <h5>Office Location</h5>
+                        <strong>Hevon corporation</strong><br>
+                        7 rue Pasteur<br>
+                        75011 Paris<br>
+                    </address>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
-        <div class="col m6 s12 l2">
-            <address>
-                <h5>Contact</h5>
-                CEO & Founder: Benjamin Geyre
-                <strong>Support:</strong>+33 (0) 672692324<br>
-                <strong>Email:</strong>
-                <a href="mailto:#">contact@hevon.co</a>
-            </address>
-        </div>
-
-        <div class="col m6 s12 l2">
-            <address>
-                <h5>Office Location</h5>
-                <strong>Hevon corporation</strong><br>
-                7 rue Pasteur<br>
-                75011 Paris<br>
-            </address>
-        </div>
-
-        <div class="col m6 s12 l5">
-            <br>
+        <div class="col m6 s12 l6">
             <h6>You can find us here
                 <a target="_blank" href="https://www.google.fr/maps/place/7+Rue+Pasteur,+75011+Paris/data=!4m2!3m1!1s0x47e66dfbb9bdc247:0x467d3bc7e4e7ac4e?sa=X&ved=0CCAQ8gEwAGoVChMIhurJkZDJxwIVwdcaCh2wnAB-">
                 (zoom map)</a>
             </h6>
-          <br>
             <div class="col-lg-12 map-container">
               {{> googleMap name="exampleMap" options=exampleMapOptions}}
             </div>
