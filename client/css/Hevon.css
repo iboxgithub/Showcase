@@ -5,7 +5,7 @@ body {
 
 @font-face {
     font-family: "Acto-UltraLight";
-    src: url("../../public/Fonts/Acto/Acto-UltraLight.otf");
+    src: url("./Fonts/Acto/Acto-UltraLight.otf");
 }
 
 .map-container {
