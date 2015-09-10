@@ -1,0 +1,19 @@
+<template name="blog">
+    <div class="account panel panel-info">
+        <div id="content blog">
+           {{#each posts}}
+               {{> postItem}}
+           {{/each}}
+       </div>
+    </div>
+</template>
+
+<template name="postItem">
+    <div class="post">
+        <div class="post-content">
+            <h3>News Hevon1</h3>
+            <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+            <!--<h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>-->
+        </div>
+    </div>
+</template>

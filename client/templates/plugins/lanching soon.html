@@ -1,0 +1,18 @@
+<template name="soon">
+    <div class = "">
+        <h2>LAUNCHING SOON</h2>
+        <p>Be the first to know...</p>
+        <div class="fields-container">
+            <div class="input"> <label class="outside" for="collected_email[name]">Name</label>
+                <input name="collected_email[name]" type="text">
+                <div class="error s-form-error-name" style="display: none; ">
+                    Please enter a name. </div>
+            </div> <div class="input"> <label class="outside" for="collected_email[email]">Email</label>
+            <input name="collected_email[email]" type="text">
+            <div class="error s-form-error-email" style="display: none; "> Invalid email. </div>
+        </div>
+            <div class="input submit"> <input class="submit-button s-form-click" type="button" value="Submit" style="background-color: rgb(72, 54, 88);"> <div class="loading-icon s-form-icon" style="display: none; ">
+            </div> </div>
+        </div>
+    </div>
+</template>

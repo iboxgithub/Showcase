@@ -6,4 +6,10 @@
 
 meteor-platform
 iron:router
-twbs:bootstrap
+dburles:google-maps
+joshowens:shareit
+fortawesome:fontawesome
+bredikhin:contact-form
+materialize:materialize
+email
+insecure

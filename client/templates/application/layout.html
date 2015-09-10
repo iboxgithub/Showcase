@@ -1,13 +1,45 @@
 <head>
     <title>Hevon - The universal currency platform</title>
+    <link rel="shortcut icon" href="./img/Earth-icon.png"/>
 </head>
 
-
 <template name="layout">
-  <div class="container">
-    {{> header}}
-    <div id="main" class="row-fluid">
-      {{> yield}}
+      {{> header}}
+    <div class="container-fluid">
+      <div id="main" class="row-fluid">
+          <span class='Top'><i class="fa fa-angle-up"></i></span> <!--Scroll up button-->
+        {{> yield}}
+      </div>
     </div>
-  </div>
+    {{> footer}}
 </template>
+
+<!-- <script
+          src="http://maps.googleapis.com/maps/api/js">
+  </script>
+
+  <script>
+      var myCenter=new google.maps.LatLng(51.508742,-0.120850);
+      var marker;
+
+      function initialize()
+      {
+          var mapProp = {
+              center:myCenter,
+              zoom:5,
+              mapTypeId:google.maps.MapTypeId.ROADMAP
+          };
+
+          var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+          var marker=new google.maps.Marker({
+              position:myCenter,
+              animation:google.maps.Animation.BOUNCE
+          });
+
+          marker.setMap(map);
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+-->

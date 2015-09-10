@@ -1,0 +1,73 @@
+<template name="header">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper blue-text grey lighten-5">
+                <a href="/" class="brand-logo">&nbsp;&nbsp;&nbsp;Hevon Showcase</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse" style="margin-left: 10px">
+                    <i class="fa fa-bars"></i>
+                </a>
+
+                <ul class="right hide-on-med-and-down">
+                        <li class="{{activeRouteClass  'welcome'}}">
+                            <a href="{{pathFor 'welcome'}}">Welcome</a>
+                        </li>
+                        <li class="{{activeRouteClass 'about'}}">
+                            <a href="{{pathFor 'about'}}">About</a>
+                        </li>
+                        <li class="{{activeRouteClass 'contact'}}">
+                            <a href="{{pathFor 'contact'}}">Contact</a>
+                        </li>
+                        <li class="{{activeRouteClass 'howitworks'}}">
+                            <a href="{{pathFor 'howitworks'}}">How does it work?</a>
+                        </li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li class="{{activeRouteClass  'welcome'}}">
+                        <a href="{{pathFor 'welcome'}}">Welcome</a>
+                    </li>
+                    <li class="{{activeRouteClass 'about'}}">
+                        <a href="{{pathFor 'about'}}">About</a>
+                    </li>
+                    <li class="{{activeRouteClass 'contact'}}">
+                        <a href="{{pathFor 'contact'}}">Contact</a>
+                    </li>
+                    <li class="{{activeRouteClass 'howitworks'}}">
+                        <a href="{{pathFor 'howitworks'}}">How does it work?</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</template>
+
+<!--
+    <nav class="navbar navbar-default" role="navigation">
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{pathFor 'welcome'}}">Hevon Showcase</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav">
+                    <li class="{{activeRouteClass  'welcome'}}">
+                        <a href="{{pathFor 'welcome'}}"><i class="fa fa-home"></i></a>
+                    </li>
+                    <li class="{{activeRouteClass 'about'}}">
+                        <a href="{{pathFor 'about'}}">About</a>
+                    </li>
+                    <li class="{{activeRouteClass 'contact'}}">
+                        <a href="{{pathFor 'contact'}}">Contact</a>
+                    </li>
+                    <li class="nav navbar-nav navbar-right">
+                        {{> loginButtons}}
+                    </li>
+                </ul>
+
+                 </div>
+        </div>-->
