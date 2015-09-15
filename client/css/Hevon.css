@@ -3,6 +3,15 @@ body {
     background-color: #fafafa;
 }
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+}
+
 @font-face {
     font-family: "Acto-UltraLight";
     src: url("Fonts/Acto/Acto-UltraLight.otf");
@@ -84,6 +93,10 @@ fieldset {
     background-repeat: no-repeat;
     background-color: white;
 }
+
+.aboutimg.s12 {
+height: 170px;
+}
 .about {
     margin-top: 20px;
 }
@@ -92,7 +105,7 @@ fieldset {
 .Top {
     text-align: center;
     position : fixed ;
-    bottom : 20px;
+    bottom : 40px;
     right : 20px ;
     background: darkgray;
     padding : 3px 5px;
