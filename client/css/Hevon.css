@@ -86,17 +86,17 @@ fieldset {
 }
 
 /*about template*/
-.aboutimg {
+/*.aboutimg.l6 {
     background-image: url("./img/Screenshot_214.png");
     background-size: contain;
-    height: 350px;
+    height: 350px !important;
     background-repeat: no-repeat;
     background-color: white;
-}
+}*/
 
-.aboutimg.s12 {
-height: 170px;
-}
+/*.aboutimg.s12 {
+height: 170px !important;
+}*/
 .about {
     margin-top: 20px;
 }
